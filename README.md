@@ -7,6 +7,9 @@ visualize response in postman
 var objectData = pm.response.json()
 // var objectData = {"singers":[{"id":1,"name":"Sơn Tùng M-TP","hot_songs":["Hãy trao cho anh","Lạc trôi","Không phải dạng vừa đâu","Cơn mưa ngang qua"]},{"id":2,"name":"Mr. Siro","hot_songs":["Lắng nghe nước mắt","Một bước yêu vạn dặm đau"]},{"id":3,"name":"Bích Phương","hot_songs":["Có khi nào rời xa","Đi đu đưa đi","Bao giờ lấy chồng"]}],"total":3,"total_song":9}
 
+```
+
+```
 // Bước 2: Tạo template
 // var template = `{{statusCode}}`
 
@@ -48,6 +51,9 @@ var template = `
 //     </tbody>
 // </table>`
 
+```
+
+```
 // Bước 3: Set template
 pm.visualizer.set(template, objectData)
 
