@@ -10,7 +10,7 @@ var objectData = pm.response.json()
 ```
 
 ```
-// Bước 2: Tạo template
+// Bước 2: Tạo template (dùng handlebars)
 // var template = `{{statusCode}}`
 
 //  <h2>Total {{ tbl_portrait_customer }}</h2>
