@@ -1,0 +1,25 @@
+// var data = pm.response.json()
+var data = {
+    "data" : [
+        {
+            "name" : "Postmany"
+        }
+        ]
+};
+var template = `
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+
+        {{#each response.data}}
+            <tr>
+                <td>{{name}}</td>
+            </tr>
+        {{/each}}
+    </table>
+`;
+pm.visualizer.set(template, {
+    // Pass the responses you need in a single JSON as data
+    response: data
+});
