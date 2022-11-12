@@ -1,0 +1,23 @@
+// var response = pm.response.json()
+var response = [
+    {
+        "name":"nguyen"
+    }
+]
+var template = `
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+
+        {{#each response}}
+            <tr>
+                <td>{{this.name}}</td>
+            </tr>
+        {{/each}}
+    </table>
+`;
+pm.visualizer.set(template, {
+    // Pass the responses you need in a single JSON as data
+    response: response
+});
